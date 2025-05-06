@@ -37,6 +37,8 @@ async function run() {
       headers: {
         'Content-Type': mimeType,
       },
+      maxContentLength: Infinity,
+      maxBodyLength: Infinity
     });
 
     // Step 3: Complete the upload
